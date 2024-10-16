@@ -17,7 +17,7 @@ public class OutputHandler {
 
         System.out.println();
         System.out.print("Today " + date + " at " + time + " ");
-        System.out.print("that corresponds to ");
+        System.out.print("that amount corresponds to ");
         System.out.print(new DecimalFormat("###,###.##").format(amount));
         System.out.print(" " + valuta);
         System.out.println();

@@ -11,8 +11,16 @@ public class Main {
         do {
 
             MenuDisplay.menuDisplay();
+            try {
+                choice = InputHandler.menuChoice();
 
-            choice = InputHandler.menuChoice();
+            } catch (Exception e) {
+                System.out.println();
+                System.out.println("Ooops! Something went wrong! Did you really use a number from the menu?");
+                System.out.println("Please try again!");
+                System.out.println();
+
+                }
 
             switch (choice) {
 

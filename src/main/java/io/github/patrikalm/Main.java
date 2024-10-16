@@ -11,7 +11,9 @@ public class Main {
         do {
 
             MenuDisplay.menuDisplay();
+
             try {
+
                 choice = InputHandler.menuChoice();
 
             } catch (Exception e) {
@@ -19,7 +21,6 @@ public class Main {
                 System.out.println("Ooops! Something went very wrong! Did you really use a number from the menu?");
                 System.out.println("Please start the program again!");
                 System.out.println();
-                break;
 
                 }
 

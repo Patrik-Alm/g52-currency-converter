@@ -1,5 +1,6 @@
 package io.github.patrikalm;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class InputHandler {
@@ -9,9 +10,7 @@ public class InputHandler {
 
     public static int menuChoice() {
 
-
             return scanner.nextInt();
-
 
     }
 

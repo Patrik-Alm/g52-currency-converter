@@ -26,6 +26,8 @@ public class Main {
 
             switch (choice) {
 
+                case 0:
+                    break;
                 case 1:
                     CurrencyConversion.sekUsd();
                     break;

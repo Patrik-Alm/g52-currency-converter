@@ -6,10 +6,10 @@ public class CurrencyConversion {
     static double amount = 0;
 
     static DecimalFormat exchangeValue = null;
-    static double exchangeRateSekUsd = 0.999;
-    static double exchangeRateUsdSek = 10.0999;
-    static double exchangeRateSekEur = 0.8;
-    static double exchangeRateEurSek = 11;
+    static double exchangeRateSekUsd = 0.1; //Källa Di.se/valutor per 24-10-16
+    static double exchangeRateUsdSek = 10.44; //Källa Di.se/valutor per 24-10-16
+    static double exchangeRateSekEur = 0.09; //Källa Di.se/valutor per 24-10-16
+    static double exchangeRateEurSek = 11.36; //Källa Di.se/valutor per 24-10-16
 
 
 

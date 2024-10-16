@@ -2,6 +2,7 @@ package io.github.patrikalm;
 
 public class CurrencyConversion {
     static double amount = 0;
+    static String valuta = null;
 
      static double exchangeRateSekUsd = 0.1; //Källa Di.se/valutor per 24-10-16
     static double exchangeRateUsdSek = 10.44; //Källa Di.se/valutor per 24-10-16
@@ -18,7 +19,9 @@ public class CurrencyConversion {
 
         amount = amount * exchangeRateSekUsd;
 
-        System.out.println("That is " + amount + " USD");
+        valuta = "USD";
+
+        OutputHandler.output(amount, valuta);
 
     }
     public static void usdSek() {
@@ -29,7 +32,9 @@ public class CurrencyConversion {
 
         amount = amount * exchangeRateUsdSek;
 
-        System.out.println("That is " + amount + " SEK");
+        valuta = "SEK";
+
+        OutputHandler.output(amount, valuta);
 
     }
     public static void sekEur() {
@@ -40,7 +45,9 @@ public class CurrencyConversion {
 
         amount = amount * exchangeRateSekEur;
 
-        System.out.println("That is " + amount + " EUR");
+        valuta = "EUR";
+
+        OutputHandler.output(amount, valuta);
 
     }
     public static void eurSek() {
@@ -51,7 +58,9 @@ public class CurrencyConversion {
 
         amount = amount * exchangeRateEurSek;
 
-        System.out.println("That is " + amount + " SEK");
+        valuta = "SEK";
+
+        OutputHandler.output(amount, valuta);
 
     }
 

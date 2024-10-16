@@ -29,7 +29,10 @@ public class Main {
                     CurrencyConversion.eurSek();
                     break;
                 default:
-
+                    System.out.println();
+                    System.out.println("You have to enter a number from the Menu.");
+                    System.out.println("Please try again!");
+                    System.out.println();
 
             }
 

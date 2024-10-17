@@ -15,8 +15,15 @@ public class CurrencyConversion {
 
         System.out.println();
         System.out.print("Enter the value in SEK to be converted to USD: ");
-        amount = InputHandler.valueInput();
 
+        try {
+        amount = InputHandler.valueInput();
+        } catch (Exception e) {
+            System.out.println();
+            System.out.println("Ooops! Something went very wrong! Did you really use a number from the menu?");
+            System.out.println("Please start the program again!");
+            System.out.println();
+        }
         amount = amount * exchangeRateSekUsd;
 
         valuta = "USD";
@@ -28,8 +35,15 @@ public class CurrencyConversion {
 
         System.out.println();
         System.out.print("Enter the value in USD to be converted to SEK: ");
-        amount = InputHandler.valueInput();
 
+        try {
+        amount = InputHandler.valueInput();
+        } catch (Exception e) {
+            System.out.println();
+            System.out.println("Ooops! Something went very wrong! Did you really use a number from the menu?");
+            System.out.println("Please start the program again!");
+            System.out.println();
+        }
         amount = amount * exchangeRateUsdSek;
 
         valuta = "SEK";
@@ -41,8 +55,15 @@ public class CurrencyConversion {
 
         System.out.println();
         System.out.print("Enter the value in SEK to be converted to EUR: ");
-        amount = InputHandler.valueInput();
 
+        try {
+        amount = InputHandler.valueInput();
+        } catch (Exception e) {
+            System.out.println();
+            System.out.println("Ooops! Something went very wrong! Did you really use a number from the menu?");
+            System.out.println("Please start the program again!");
+            System.out.println();
+        }
         amount = amount * exchangeRateSekEur;
 
         valuta = "EUR";
@@ -54,7 +75,15 @@ public class CurrencyConversion {
 
         System.out.println();
         System.out.print("Enter the value in EUR to be converted to SEK: ");
+
+        try {
         amount = InputHandler.valueInput();
+        } catch (Exception e) {
+            System.out.println();
+            System.out.println("Ooops! Something went very wrong! Did you really use a number from the menu?");
+            System.out.println("Please start the program again!");
+            System.out.println();
+        }
 
         amount = amount * exchangeRateEurSek;
 
